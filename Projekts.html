@@ -1,0 +1,281 @@
+<html>
+<head>
+    <title>Programmētājs</title>
+    <link rel="icon" href="C:\Users\37120\Desktop\Programmētājs\logo.png" alt="logo">
+</head>
+<style>
+.sakums {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sakums > img {
+    width: 200px;
+}
+
+.sakums.hidden {
+    animation: fadeOut 2;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+    100% {
+        opacity: 5s;
+        visibility: hidden;
+    }
+}
+
+img {
+  display: inline-block;
+  margin: 25px 10px;
+}
+table, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+</style>
+
+<script>
+
+    window.addEventListener("load", function () {
+        const sakums = document.querySelector(".sakums");
+        sakums.className += " hidden"; 
+    });
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>
+
+<body bgcolor=#03A0D6 text="white">
+    <div class="sakums">
+        <img src="C:\Users\37120\Desktop\Programmētājs\Gifs.gif" alt="Gifs.gif">
+    </div>
+<hr color="white" width="800">
+
+<h1 align="center" input type="button" value="Reload Page" 
+onClick="window.location.reload(true)"><font size="20" color="white" face="arial">PROGRAMMĒTĀJS</font></h1>
+
+<hr color="white" width="600">
+
+<img src="C:\Users\37120\Desktop\Programmētājs\test.png" width="370" style="float: left;">
+   <h1 align="center">Kas ir programmēšana?</h1>
+    <hr color="white" width="600">
+
+<p align="center"><b>Datorprogrammēšana</b> jeb, biežāk lietotais nosaukums, <b>programmēšana</b> ir datorprogrammas izveides process.</p>
+
+<p align="center">Programmēšana ir ļoti plašs jēdziens, kas ietver sevī daudzas tehnikas. No vienas puses var uz to paskatīties, kā uz teksta
+    jeb komandu sarakstīšanu failā. Šī faila komandu pārtaisīšanu jeb pārkompilēšanu uz datoram saprotamu formāt un šo komandu pavēstīšanu datoram, 
+    izpildot kompilēto programmu. Lai gan tā tas bija agrākos laikos, 
+    tomēr līdz mūsdienām programmēšana ir evolucionējusi morāli un tehniski. Mūsdienu programmētājam ir jāprot tādas tehnikas, kā:
+</p>
+
+<ul type="disc">
+<li><b> Prasību apkopošana un analīze - </b>noskaidro pasūtītāja prasības pret programmatūras produktu
+<li><b>Projektēšana - </b>skices un idejas, kuras prasībās izteiktajai problēmai palīdz atrast risinājumu.
+<li><b> Programmēšana -</b>  realizācija ar programmēšanas valodu
+<li><b>Testēšana- </b>Kompānijās ar to nodarbojas speciāli cilvēki, kurus sauc par testētājiem.
+<li><b>Atkļūdošana- </b>programmētāji ikdienā izmanto dažādus rīkus, lai atrastu kļūdas kodā.
+</ul>
+
+    <hr color="white" width="1000">
+<h1 align="center">Programmēšanas valodas</h1>
+<hr color="white" width="500">
+<img src="C:\Users\37120\Desktop\Programmētājs\front end.png" alt="front end" width="400" style="float: right;">
+<h2 align="center">Front - End</h2>
+<p align="center">
+    Front-End izstrāde ir vietnes grafiskā lietotāja interfeisa izstrāde, izmantojot HTML, CSS un JavaScript,
+     lai lietotāji varētu skatīt šo vietni un ar to strādāt.
+</p>
+<p align="center">
+    Hiperteksta iezīmēšanas valoda (HTML) 
+    ir jebkura mājas lapas izstrādes procesa mugurkauls, bez kura tīmekļa lapa nepastāv. 
+    Hiperteksts nozīmē, ka tekstā ir iegultas saites, ko sauc par hipersaitēm
+</p>
+<p align="center">
+    Stila lapas kaskadēšana (CSS) kontrolē vietnes prezentācijas aspektu un ļauj jūsu vietnei iegūt unikālu izskatu. 
+    Tas tiek darīts, uzturot stila lapas, kas atbilst citiem stila noteikumiem un tiek aktivizētas, 
+    pamatojoties uz citiem ievades datiem, piemēram, ierīces ekrāna izmēru un izšķirtspēju.
+</p>
+<p align="center">
+    JavaScript ir uz notikumiem balstīta obligāta programmēšanas valoda (pretēji HTML deklaratīvajam valodas modelim), ko izmanto, lai statisku HTML lapu pārveidotu par dinamisku saskarni. JavaScript kods var izmantot dokumenta objektu modeli (DOM), 
+    ko nodrošina HTML standarts, lai manipulētu ar tīmekļa lapu, reaģējot uz notikumiem, piemēram, lietotāja ievadi.
+</p>
+<hr color="white" width="500">
+<h2 align="center">Back - End</h2>
+<p align="center">Aizmugurējā daļa attiecas uz datora lietojumprogrammas vai programmas koda daļām, kas ļauj tai darboties un kurām lietotājs nevar piekļūt. Lielākā daļa datu un darbības sintakse 
+    tiek glabāti un piekļūti datorsistēmas aizmugurē. Parasti kods sastāv no vienas vai vairākām programmēšanas valodām. Bieži izmantotas valodas - Ruby, PHP, Java, . Net un Python
+</p>
+<hr color="white" width="1000">
+<h1 align="center">Programmētāja pienākumi un alga</h1>
+<hr color="white" width="500">
+<p align="center">Programmētājs pārzina programmēšanas valodas un datu struktūras, izstrādā programmatūru atbilstoši prasību 
+    specifikācijai, organizē un vada programmētāju darba grupu, pilnveido savas zināšanas un prasmes.
+</p>
+</p>
+<p><font size="5">Programmētāja darba pienākumi:</font></p>
+<ul type="disc">
+<li>izstrādā, ievieš un uztur programmatūru;
+<li>noskaidro pasūtītāja vēlmes, analizē saistošo dokumentāciju, analizē dažādus tehniskos risinājumus un izvēlas piemērotāko;
+<li>izveido un apraksta programmatūras darbības algoritmus
+<li>veic datu aizsardzības un drošības pasākumus
+<li>konsultē programmatūras lietotājus
+<li>izvērtē testēšanā un no lietotājiem iegūtos ziņojumus par kļūdām programmas darbībā un novērš tās
+<ul>
+    <hr width="500" color="white">
+    <h1 align="center">Alga</h1>
+    <p align="center">
+        Vidēji Latvijā programmētāji pelna  892 EUR - 2 531 EUR. Programmētāja alga var ļoti atšķirties no tā ar kādu valodu strādā. 
+    </p>
+
+<p align="center">Parādītā vērtība parāda kopējo neto algu visā Latvijā. Algas lielumu ietekmē bonusi, atrašanās vieta un daudzi citi faktori.</p>
+<table border="5" align="center" width="500"  height="150">
+    <tr>
+        <td>Front - End developer</td>
+        <td>1 110 EUR - 2 995 EUR</td>
+    </tr>
+    <tr>
+        <td>Back - End developer</td>
+        <td> 1 188 EUR - 2 917 EUR</td>
+    </tr>
+    <tr>
+        <td>C++</td>
+        <td> 705 EUR - 3 121 EUR</td>
+    </tr>
+    <tr>
+        <td>C#</td>
+        <td> 685 EUR - 2 467 EUR</td>
+    </tr>
+    <tr>
+        <td>Programmatūras inženieris</td>
+        <td> 1 254 EUR - 3 472 EUR</td>
+    </tr>
+</table>
+<p align="center">Vairāk par programmētāju algām skatīt: <a href="https://www.algas.lv/algu-informacija/informacijas-tehnologijas">šeit</a></p>
+<table border="5" align="center" width="500" height="100">
+    <tr>
+        <td>Amata pozīcija algu klasifikatora sarakstā</td>
+        <td>59. vietā</td>
+    </tr>
+    <tr>
+        <td>Sieviešu īpatsvars amatā</td>
+        <td>17%</td>
+    </tr>
+    <tr>
+        <td>Respondenta vidējais vecums amatā</td>
+        <td>31</td>
+    </tr>
+</table>
+<hr width="1000">
+<h1 align="center">Programmētāja darba iespējas</h1>
+<hr width="500">
+<p align="center">Programmētājs var specializēties programmu izstrādē, uzturēšanā, uzlabošanā vai testēšanā vai arī kļūt par kādas 
+    programmēšanas valodas ekspertu. 
+    Programmētājs var strādāt gan kā pašnodarbināta persona, gan kā darbinieks dažādos uzņēmumos, piemēram:
+</p>
+
+<ul type="disc">
+<li>uzņēmumos, kas nodarbojas ar programmatūras, interneta lapu, datorspēļu vai mobilo aplikāciju izstrādi;
+<li>uzņēmumos, kuri uzkrāj un apstrādā datus lielās datu bāzēs (piemēram, bankas, bibliotēkas, ieņēmumu vai sociālās apdrošināšanas dienesti);
+<li>uzņēmumos, kuri nodrošina informācijas un datu apriti (piemēram, pasts, ziņu dienesti un portāli);
+<li>telekomunikāciju un mobilo sakaru uzņēmumos;
+<li>ražošanas uzņēmumos, izstrādājot aparatūras vai iekārtu programmnodrošinājumu;
+<li>jebkuros citos uzņēmumos, kam nepieciešama specifiska programmēšana darbu veikšanai
+(piemēram, jāizstrādā, jāuzlabo vai jāuztur īpašas grāmatvedības, 
+lietvedības vai uzskaites programmas, jāizstrādā vai jāuztur uzņēmuma mājas lapa).
+</ul>
+<hr width="1000">
+<h1 align="center">Kur var mācīties par programmētāju?</h1>
+<hr width="500">
+<img src="C:\Users\37120\Desktop\Programmētājs\rvt.png" alt="rvt.png" width="250" style="float: right;">
+<p>Programmēšanas tehniķa vidējo profesionālo izglītību var iegūt vienā no Rīgas prestižākajām Rīgas profesionālas 
+izglītības iestādēm - PIKC RVT</p>
+<b>Programmas veids: </b> Profesionālās vidējās izglītības programma<br>
+<b>Programmu kopa:</b> Programmēšana<br>
+<b>Iepriekšējā izglītība: </b>  Pamatizglītība, pēc 9. klases<br>
+<b>Mācību ilgums: </b> 4 gadi
+<p><b>Izglītības programmā apgūstamās prasmes:</b><br>
+    Izglītības procesa rezultātā prot un iesaistās programmatūras projektēšanā, izstrādāšanā un pielāgošanā konkrētām pasūtītāja vajadzībām,
+     izmanto datoru sistēmas un datortīklus programmēšanas uzdevumu veikšanai.
+</p>
+<p><b>Programmēšanas tehniķa pienākumi un uzdevumi, kas tiek apgūti mācību procesa laikā:</b></p>
+<ul type="disc">
+<li>piedalās programmatūras izstrādē, ieviešanā un uzturēšanā, kā arī esošās programmatūras pielāgošanā konkrētām pasūtītāja vajadzībām;
+<li>konstruē un apraksta programmatūras darbības algoritmus vienkāršiem uzdevumiem;
+<li>izmantojot populārākās programmēšanas valodas, raksta vienkāršu programmas kodu saskaņā ar projektējuma aprakstu;
+<li>piedalās testpiemēru izstrādē un veic testēšanu, piedalās testēšanas pārskata dokumentu sagatavošanā;
+<li>piedalās programmatūras dokumentācijas izstrādē;
+<li>sagatavo vidi izstrādātās programmatūras ieviešanai un uzstāda to;
+<li>konsultē programmatūras lietotājus.
+</ul>
+<p align="center">Vairāk informācijas par RVT programmēšanas tehniķa izglītības iegūšanu: <a href="https://www.rvt.lv/iegusti-profesiju/datorikas-nodala/">šeit</a><br>
+Vairāk informācijas par  programmēšanas tehniķa izglītības iegūšanu Latvijā: <a href="https://niid.lv/niid_search?ct=&qy=&tg=&level_1=4&subject_2=484&language=lv&page=1">šeit</a></p>
+
+
+<hr width="500">
+<img src="C:\Users\37120\Desktop\Programmētājs\lu.png" alt="lu.png" width="250" style="float: left;">
+<p>Programmēšanas inženiera izglītību (Bakalaura grādu) var iegūt vienā no daudzajām augstskolās Latvijā - Latvijas Universitātē</p>
+<p>
+<b>Iegūstamais grāds un kvalifikācija: </b> Dabaszinātņu bakalaura grāds datorzinātnēs<br>
+<b>Nepieciešamā iepriekšējā izglītība:</b> vispārējā vidējā izglītība vai 4-gadīgā profesionālā vidējā izglītība<br>
+<b>Studiju ilgums: </b> Pilna laika klātiene: 4 gadi (8 semestri)<br>
+<b>Studiju maksa gadā:</b>  2450 EUR
+</p>
+
+<p>
+    <b>Mērķis:</b><br>Programmas mērķis ir sagatavot speciālistus, kas spēj projektēt un izstrādāt sarežģītas lietojumprogrammas un 
+    informatīvās sistēmas, tāpēc programma ir izveidota tā, lai sniegtu pamatzināšanas datorikā, izvēlētajā specializācijā un matemātikā,
+     attīstītu praktiskās iemaņas sarežģītu programmu izveidē, kā arī izpratni par zinātniski pētnieciskā darba izstrādi.
+</p>
+<p>
+    <b>Programmā jāapgūst: </b>programmēšana (dažādas programmēšanas valodas, datu struktūras, algoritmi), datoru uzbūve, tīmekļa tehnoloģijas,
+     datubāzes, operētājsistēmas, projektu pārvaldība, matemātika, datorzinātnes matemātiskie pamati (automātu teorija, algoritmu teorija, 
+     varbūtību teorija, analītiskā ģeometrija) u.c.
+</p>
+<p align="center">Vairāk par programmēšanas inženiera izglītību iegūšanu Latvijas Universitātē skatīt:
+    <a href="https://www.lu.lv/studijas/fakultates/datorikas-fakultate/bakalaura-limena-studijas/datorzinatnes/"> šeit</a><br>
+Vairāk par programmēšanas inženiera izglītību iegūšanu Latvijas augstskolās:
+    <a href="https://niid.lv/niid_search?qy=&ct=&tg=&level_1=7&qualification=Programm%C4%93%C5%A1anas%20in%C5%BEenieris%405%7CProgramm%C4%93t%C4%81js%404"> šeit</a>
+</p>
+<hr width="1000">
+<h1 align="center">Kāpēc vajadzētu mācīties programmēšanu?</h1>
+<hr width="500">
+<p align="center">
+    Mācīšanās kodēt ļauj ne tikai dot mašīnām norādījumus, bet arī iemācīt abstraktu domāšanu un problēmu risināšanu. 
+    Faktiski problēmu risināšanas prasmes un radošums ir galvenais, lai kļūtu par veiksmīgu datorprogrammētāju. 
+    Protams, jums būs jāzina arī dažas kodēšanas valodas, lai izmantotu savas zināšanas.
+</p>
+<h3>10 iemesli kāpēc vajadzētu mācīties programmēšanu:</h3>
+<ol type="1">
+    <li>Tev programmēšanas prasmes var nodrošināt darbu
+    <li>Nav nepieciešams 4 gadu grāds
+    <li>Tu vari strādāt no mājām
+    <li>Tu vari izveidot visu, ko vēlies
+    <li>Augsts ienākumu potenciāls
+    <li>Tu sapratīsi, kā darbojas programmatūra
+    <li>Tas māca tev neatlaidību
+    <li>Tu iemācīsies apvienot tehniskās prasmes un radošumu
+    <li>Tu attīsti problēmu risināšanas prasmes
+    <li>Tu vari atvērt savu uzņēmumu
+</ol>
+
+<hr width="1000">
+<h1 align="center">Kāpēc programmēšana ir svarīga?</h1>
+<hr width="500">
+<p align="center">Video angļu valodā</p>
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Dv7gLpW91DM" title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+<hr>
+</body>
+</html>
